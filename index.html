@@ -10,5 +10,10 @@
 	
 </body>
 	<script>alert(/xss_poc/)</script>
-	<svg xmlns="http://www.w3.org/2000/svg" onload="alert(document.cookie)"/>
+	<script>
+		javascript:fetch('/').then(res=>res.text()).then(data=>alert(data));
+	</script>
+	
+	<img src="https://i.ytimg.com/vi/X28Fmjm7YFw/maxresdefault.jpg"/>
+	
 </html>
